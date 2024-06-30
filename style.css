@@ -1,0 +1,175 @@
+.barlow-semi-condensed-bold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+body{
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.contenedor__principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor__marcador{
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    width: 30%;
+    height: 130px;
+    margin-bottom: 100px;
+}
+
+.puntuacion{
+    width: 130px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto__inicial{
+    color: white;
+    font-family: 'Barlow Semi Condensed';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.texto__azul{
+    color: hsl(229, 64%, 46%);
+    font-family: 'Barlow Semi Condensed';
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+#score{
+    color: hsl(180, 1%, 34%);
+    font-family: 'Barlow Semi Condensed';
+    font-size: 50px;
+    margin-top: -15px;
+}
+
+.contenedor__elecciones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+}
+
+#piedra{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 25px solid hsl(349, 70%, 56%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    grid-column: 2/3;
+    grid-row: 3;
+}
+
+#papel{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 25px solid hsl(230, 89%, 65%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+#tijeras{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 25px solid  hsl(40, 84%, 53%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    grid-column: 3/3;
+    grid-row: 1;
+}
+
+#resultado{
+    padding: 0 10%;
+}
+
+#eleccion__jugador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#eleccion__ordenador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.picks{
+    font-family: 'Barlow Semi Condensed';
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.nuevo__juego{
+    background-color: white;
+    color: rgb(202, 19, 19);
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.quien__gana{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.ocultar{
+    display: none;
+}
+
+.ganador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;;
+}
